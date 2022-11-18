@@ -9,14 +9,24 @@
     <link rel="stylesheet" href="src\style\style.css">
     <link rel="shortcut icon" type="image/x-icon" href="src\images\favicon.ico">
     <script src="index.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
 
 </head>
 
 <body>
-    <div class="nav">
-        <a href="" class="navbutton">Home</a>
 
-        <a href="" class="navbutton">Departments</a>
+    <div class="banner">
+        <div class="banner-text">
+            <h1 style="font-size:4.3vw;">Kennett High School</h1>
+            <br>
+            <h2 class="over" style="font-size:1vw;">Program of Studies</h2>
+        </div>
+    </div>
+
+    <div class="nav">
+        <a href="index.html" class="navbutton">Home</a>
+
+        <a href="src\views\Departments.html" class="navbutton">Departments</a>
 
         <a href="" class="navbutton">Requirements</a>
 
@@ -33,21 +43,27 @@
     <div class="slideshow-container">
 
         <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="src\images\monkey.jpg" style="width:100%">
-            <div class="text">The first Image</div>
+            <div class="numbertext">1 / 4</div>
+            <img src="src\images\khs-2.jpg" style="width:100%">
+            <div class="caption">The first Image</div>
         </div>
 
         <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="src\images\monke.gif" style="width:100%">
-            <div class="text">The second Image</div>
+            <div class="numbertext">2 / 4</div>
+            <img src="src\images\khs-3.jpg" style="width:100%">
+            <div class="caption">The second Image</div>
         </div>
 
         <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="src\images\monkey.jpg" style="width:100%">
-            <div class="text">The third Image</div>
+            <div class="numbertext">3 / 4</div>
+            <img src="src\images\khs-4.jpg" style="width:100%">
+            <div class="caption">The third Image</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="src\images\khs-5.jpg" style="width:100%">
+            <div class="caption">The Fourth Image</div>
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -60,6 +76,7 @@
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
     </div>
 
     <div>

@@ -19,6 +19,67 @@
 }
 
 
+/*****************
+    - Banner -
+*****************/
+
+.banner {
+    background-color: black;
+    height: 400px;
+    border-bottom: 12px solid #c0b460;
+}
+
+@media only screen and (min-width: 600px) {
+    .banner {
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .banner {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    .banner {
+        height: 400px;
+    }
+}
+
+.banner-text {
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.over {
+    text-decoration: overline;
+    text-decoration-color: #c0b460;
+    text-decoration-thickness: 3px;
+    letter-spacing: 1px;
+    font-size: larger;
+}
+
+@media screen and (max-width: 600px) {
+    p.text {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    p.text {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    p.text {
+        font-size: 16px;
+    }
+}
+
+
 /****************
     - Nav -
 ****************/
@@ -36,15 +97,15 @@
     color: #000000;
     padding: 10px;
     font-size: 100%;
-    border: 10px solid #C0B460;
+    border: 10px solid #c0b460;
     width: 25%;
     justify-content: center;
 }
 
 .navbutton:hover {
     background-color: black;
-    color: #C0B460;
-    border: 10px dotted #C0B460;
+    color: #c0b460;
+    border: 10px dotted #c0b460;
 }
 
 .navbutton:active {
@@ -60,7 +121,7 @@
 
 
 /******************
-    - Homepage -
+    - Body -
 ******************/
 
 h3 {
@@ -76,6 +137,7 @@ h3 {
     padding: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
+    border-radius: 15px;
 }
 
 
@@ -85,17 +147,13 @@ h3 {
     box-sizing: border-box
 }
 
-body {
-    font-family: Verdana, sans-serif;
-    margin: 0
-}
-
 .mySlides {
     display: none
 }
 
 img {
     vertical-align: middle;
+    border-radius: 15px;
 }
 
 
@@ -146,7 +204,7 @@ img {
 
 /* Caption text */
 
-.text {
+.caption {
     color: #f2f2f2;
     font-size: 15px;
     padding: 8px 12px;
@@ -218,6 +276,11 @@ img {
     text-align: center;
     margin-bottom: 20px;
 }
+
+
+/******************
+    - Footer -
+******************/
 
 #footer {
     text-align: center;
