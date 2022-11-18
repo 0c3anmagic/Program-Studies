@@ -234,3 +234,7 @@ img {
     justify-content: space-around;
     margin: 20px;
 }
+
+#linkContent p {
+    text-align: center;
+}
