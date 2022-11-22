@@ -16,26 +16,8 @@
 
 .banner {
     background-color: black;
-    height: 400px;
+    height: 30vh;
     border-bottom: 12px solid #c0b460;
-}
-
-@media only screen and (min-width: 600px) {
-    .banner {
-        height: 200px;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .banner {
-        height: 300px;
-    }
-}
-
-@media only screen and (max-width: 1260px) {
-    .banner {
-        height: 400px;
-    }
 }
 
 .banner-text {
@@ -50,24 +32,6 @@
     text-decoration-thickness: 3px;
     letter-spacing: 1px;
     font-size: larger;
-}
-
-@media screen and (max-width: 600px) {
-    p.text {
-        font-size: 30px;
-    }
-}
-
-@media screen and (min-width: 700px) {
-    p.text {
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 699px) {
-    p.text {
-        font-size: 16px;
-    }
 }
 
 
@@ -87,7 +51,7 @@
     background-color: #BBBBBB;
     color: #000000;
     padding: 10px;
-    font-size: 100%;
+    font-size: 4vw;
     border: 10px solid #C0B460;
     width: 25%;
     justify-content: center;
@@ -104,12 +68,6 @@
     background-color: #A09857;
 }
 
-@media (min-device-width: 375px) {
-    .navbutton {
-        font-size: 30px;
-    }
-}
-
 
 /****************
     - Body -
@@ -117,7 +75,7 @@
 
 h1 {
     text-align: center;
-    font-size: 70px;
+    font-size: 10vw;
     margin-bottom: 0px;
 }
 
@@ -155,6 +113,7 @@ h1 {
     list-style: none;
     justify-content: space-between;
     background-color: #c0b460;
+    min-width: 280px;
     padding: 15px;
     margin-left: 120px;
     margin-right: 120px;
@@ -164,9 +123,12 @@ h1 {
 .cards__item {
     display: flex;
     padding: 1rem;
-    overflow-wrap: normal;
-    @media(min-width: 40rem) {
-        width: 50%;
+    max-width: 250px;
+    min-width: 250px;
+    overflow-wrap: break-word;
+    @media(min-width: 800px) {
+        max-width: 400px;
+        min-width: 400px;
     }
     @media(min-width: 56rem) {
         width: 33.3333%;
