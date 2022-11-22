@@ -14,9 +14,13 @@
     - Banner -
 *****************/
 
+.big {
+    font-size: 8vw;
+}
+
 .banner {
     background-color: black;
-    height: 30vh;
+    height: 30vw;
     border-bottom: 12px solid #c0b460;
 }
 
@@ -31,7 +35,7 @@
     text-decoration-color: #c0b460;
     text-decoration-thickness: 3px;
     letter-spacing: 1px;
-    font-size: larger;
+    font-size: 4vw;
 }
 
 
@@ -51,7 +55,7 @@
     background-color: #BBBBBB;
     color: #000000;
     padding: 10px;
-    font-size: 4vw;
+    font-size: 3vw;
     border: 10px solid #C0B460;
     width: 25%;
     justify-content: center;
@@ -75,7 +79,13 @@
 
 h1 {
     text-align: center;
-    font-size: 10vw;
+    font-size: 6vw;
+    margin-bottom: 0px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2vw;
     margin-bottom: 0px;
 }
 
@@ -113,25 +123,25 @@ h1 {
     list-style: none;
     justify-content: space-between;
     background-color: #c0b460;
-    min-width: 280px;
-    padding: 15px;
-    margin-left: 120px;
-    margin-right: 120px;
+    min-width: 320px;
+    padding: 2vw;
+    margin-left: 12vw;
+    margin-right: 12vw;
     border-radius: 15px;
 }
 
 .cards__item {
     display: flex;
     padding: 1rem;
-    max-width: 250px;
-    min-width: 250px;
+    max-width: 300px;
+    min-width: 300px;
     overflow-wrap: break-word;
-    @media(min-width: 800px) {
-        max-width: 400px;
-        min-width: 400px;
-    }
-    @media(min-width: 56rem) {
-        width: 33.3333%;
+}
+
+@media only screen and (max-width: 768px) {
+    [cards_item] {
+        max-width: 100%;
+        min-width: 100%;
     }
 }
 
@@ -140,8 +150,16 @@ h1 {
     border-radius: 0.25rem;
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
     display: flex;
+    min-width: inherit;
     flex-direction: column;
     overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+    [card] {
+        max-width: 100%;
+        min-width: 100%;
+    }
 }
 
 .card__content {
@@ -165,56 +183,6 @@ h1 {
     line-height: 1.5;
     margin-bottom: 1.25rem;
 }
-
-
-/* .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: #c0b460;
-    padding: 15px;
-    margin-left: 120px;
-    margin-right: 120px;
-    border-radius: 15px;
-}
-
-.card {
-    width: 25%;
-    max-height: 15%;
-    min-width: 150px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 15px;
-    padding: 15px;
-    text-align: center;
-    border: 10px solid #020202;
-    display: flex;
-    flex-direction: column;
-}
-
-.card-content {
-    font-size: 2wv;
-}
-
-.card-button {
-    margin: 22px 0;
-    font-size: large;
-    background: black;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 25px;
-    transition: .3s ease;
-}
-
-.col:hover {
-    background-color: #ffffff;
-}
-
-a:visited {
-    color: #ffffff;
-} */
 
 
 /******************
