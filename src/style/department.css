@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'Nevis';
+    src: url('Nevis\ Bold.ttf') format('truetype');
+}
+
+* {
+    font-family: Nevis;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*****************
+    - Banner -
+*****************/
+
+.big {
+    font-size: 8vw;
+}
+
+.banner {
+    background-color: black;
+    height: 30vw;
+    border-bottom: 12px solid #c0b460;
+}
+
+.banner-text {
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.over {
+    text-decoration: overline;
+    text-decoration-color: #c0b460;
+    text-decoration-thickness: 3px;
+    letter-spacing: 1px;
+    font-size: 4vw;
+}
+
+
+/****************
+    - Nav -
+****************/
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbutton {
+    display: flex;
+    text-decoration: none;
+    background-color: #BBBBBB;
+    color: #000000;
+    padding: 10px;
+    font-size: 3vw;
+    border: 10px solid #C0B460;
+    width: 25%;
+    justify-content: center;
+}
+
+.navbutton:hover {
+    background-color: black;
+    color: #C0B460;
+    border: 10px dotted #C0B460;
+}
+
+.navbutton:active {
+    color: #ffffff;
+    background-color: #A09857;
+}
+
+
+/****************
+    - Body -
+****************/
+
+h1 {
+    text-align: center;
+    font-size: 6vw;
+    margin-bottom: 0px;
+}
+
+#line {
+    background-color: #c0b460;
+    border-radius: 15px;
+    margin: auto;
+    width: 15%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.grid-container {
+    display: grid;
+    gap: 15px 15px;
+    grid-template-columns: auto auto;
+    background-color: #c0b460;
+    padding: 15px;
+    margin-left: 120px;
+    margin-right: 120px;
+    border-radius: 15px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    border-radius: 15px;
+    padding: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item:hover {
+    background-color: #ffffff;
+}
+
+a:visited {
+    color: #000000;
+}
+
+
+/******************
+    - Footer -
+******************/
+
+#footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    border-top: #c0b460 solid 12px;
+}
+
+#linkContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+#linkContent p {
+    text-align: center;
+}
